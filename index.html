@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+    <link rel="icon" type="image/x-icon" href="icon/groceries_10963225.png">
+    <title>website</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-red-200">
+    <!-- header s -->
+     <nav class="flex justify-between p-5 h-[12vh]  items-center bg-blur-sm" >
+        <!-- <h2 class="font-sans text-xl font-serif text-red-100 text-center font-bold ms-5">daniyal</h2> -->
+         <img src="icon/groceries_10963225.png" class="w-[50px] ms-7" alt="">
+        <ul class="flex gap-9  p-5">
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="contect">contect</a></li>
+            <li><a href="setting">setting</a></li>
+        </ul>
+        <select name="category" id="category" class="w-64 p-2 rounded font-sarif   " onchange="card()">
+            <option selected disabled class="font-sarif p-2"> select a category</option>
+        </select>
+     </nav>
+     <div class="main flex flex-wrap gap-5 p-5 bg-red-200 " id="main">
+
+    </div>
+   
+
+<script src="app.js"></script>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+</body>
+</html>
